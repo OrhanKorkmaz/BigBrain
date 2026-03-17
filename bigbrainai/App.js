@@ -10,6 +10,7 @@ import HomeScreen from './Screens/HomeScreen';
 import HistoryScreen from './Screens/HistoryScreen';
 import ProfileScreen from './Screens/ProfileScreen';
 import ResultsScreen from './Screens/ResultsScreen';
+import JudgeMeScreen from './Screens/JudgeMeScreen';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -85,6 +86,7 @@ function RootNavigator() {
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Main" component={MainTabs} />
         <Stack.Screen name="Results" component={ResultsScreen} />
+        <Stack.Screen name="JudgeMe" component={JudgeMeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
